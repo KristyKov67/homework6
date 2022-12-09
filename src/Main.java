@@ -22,37 +22,38 @@ public class Main {
 
     public static void task2() {
         System.out.println("Задача 2");
-        for (int i = 10; (0 < i) && (i < 11); i = i - 1) {
+        for (int i = 10; (0 < i) ; i--) {
             System.out.println("Число " + i);
         }
     }
 
     public static void task3() {
         System.out.println("Задача 3");
-        for (int i = 0; (0 <= i) && (i < 18); i = i + 2) {
+        for (int i = 0; (i < 18); i = i + 2) {
             System.out.println("Число четное " + i);
         }
     }
 
     public static void task4() {
         System.out.println("Задача 4");
-        for (int i = 10; (-10 <= i) && (i < 11); i = i - 1) {
+        for (int i = 10; (-10 <= i) ; i--) {
             System.out.println("Число " + i);
         }
     }
 
     public static void task5() {
         System.out.println("Задача 5");
-        for (int i = 1904; i < 2096; i = i + 4) {
-            System.out.println("Высокосный год " + i);
+        for (int year = 1904; year < 2096; year = year + 4) {
+            System.out.println("Высокосный год " + year);
         }
     }
 
     public static void task6() {
         System.out.println("Задача 6");
-        for (int i = 7; i <= 98; i = i + 7) {
-            System.out.printf(" ;" + i);
-        }
+        for (int i = 7; i <= 98; i+= 7) {
+            System.out.print(i + " ");}
+            System.out.println();
+
     }
 
     public static void task7() {
@@ -76,10 +77,11 @@ public class Main {
         System.out.println("Задача 9");
         int salary = 29000;
         int total = 0;
-        for (int i = 0; i < 12; i++) {
-            total = total + total / 100;
+        for (int i = 1; i <= 12; i++) {
+
             total = total + salary;
-            System.out.println("Месяц " + (i + 1) + " сумма накоплении равна " + total);
+            total = total + total / 100;
+            System.out.println("Месяц " + (i) + " сумма накоплении равна " + total);
         }
     }
 
